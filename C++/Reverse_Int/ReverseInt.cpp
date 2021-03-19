@@ -1,5 +1,9 @@
-#include <iostream>
+//
+// Created by samue on 3/19/2021.
+//
 
+#include <iostream>
+#include "ReverseInt.h"
 int reverseInt(int x){
     int revInt = 0;
     int pop = 0;
@@ -14,10 +18,4 @@ int reverseInt(int x){
         x = (x / 10);
     }
     return revInt;
-}
-int main() {
-    std::cout << "Max Int: " << INT32_MAX << "\n";
-    std::cout << "Min Int: " << INT32_MIN << "\n";
-    std::cout << reverseInt(123);
-    return 0;
 }
