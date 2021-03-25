@@ -7,7 +7,7 @@
 int reverseInt(int x){
     int revInt = 0;
     int pop = 0;
-    std::cout << "Initial int: " << x << "\n";
+    //std::cout << "Initial int: " << x << "\n";
     while (x != 0){
         pop = x % 10;
         // Test 32-bit integer overflow
