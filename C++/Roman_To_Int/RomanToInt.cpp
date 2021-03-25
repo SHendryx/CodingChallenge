@@ -22,7 +22,7 @@ int romanToInt(std::string s){
     int pos;
     //While not at end of string
     for (pos = 0; pos < s.length(); pos++){
-        std::cout << "Current Value: " << value << "\n";
+        //std::cout << "Current Value: " << value << "\n";
         //If this is the last character in the string, just add it's value.
         if (pos == s.length() - 1){
             value += getRomanValue(s[pos]);
