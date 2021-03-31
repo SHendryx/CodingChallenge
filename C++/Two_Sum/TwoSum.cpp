@@ -6,21 +6,23 @@
 #include "TwoSum.h"
 
 std::vector<int> twoSum(std::vector<int> &nums, int target) {
-    std::vector<int> sumPair (2);
-    std::vector<int> table (target,-1);
-    std::vector<int>::size_type sz = nums.size();
-    int curVal;
-    for(unsigned i=0; i < sz; i++){
-        curVal = nums[i];
+    // Possible vector values include negative, zero and positive numbers.
+    // Possible target values include negative, zero and positive numbers.
 
-        if (curVal > 0 && curVal < target){
-            if (table[target - curVal] != -1){
+    // the vector we return filled with -1
+    std::vector<int> sumPair (2, -1);
+    // get the size of the input vector
+    std::vector<int>::size_type sz = nums.size();
+
+    for (int i = 0; i < sz; i++) {
+        for (int j = i + 1; j < sz; j++){
+            if (nums[i] + nums[j] == target){
                 sumPair[0] = i;
-                sumPair[1] = table[target - curVal];
-            } else{
-                table[curVal] = i;
+                sumPair[1] = j;
+                return sumPair;
             }
         }
     }
+    // In reality, we should never get here. We should always return a matched sumPair before we reach this.
     return sumPair;
 }
