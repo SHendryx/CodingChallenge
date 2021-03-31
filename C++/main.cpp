@@ -1,6 +1,8 @@
 #include <iostream>
+#include <vector>
 #include "Reverse_Int/ReverseInt.h"
 #include "Roman_To_Int/RomanToInt.h"
+#include "Two_Sum/TwoSum.h"
 
 int main() {
     std::cout << "Max Int: " << INT32_MAX << "\n";
@@ -8,5 +10,10 @@ int main() {
     std::cout << reverseInt(123) << "\n";
 
     std::cout << romanToInt("IXV") << "\n";
+
+    auto il = {2,7,11,15};
+    std::vector<int> myList (il);
+    std::vector<int> sumPair = twoSum(myList, 9);
+    std::cout << "Sum Pair: " << sumPair[0] << ", " << sumPair[1];
     return 0;
 }
