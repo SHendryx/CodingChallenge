@@ -7,5 +7,6 @@
 
 
 int findIntegers(int num);
+void showIntegers(int num);
 
 #endif //CODINGCHALLENGE_NONNEGINTONES_H

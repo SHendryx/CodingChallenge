@@ -2,10 +2,11 @@
 // Created by SHendryx on 4/1/21.
 //
 
+#include <iostream>
 #include "NonNegIntOnes.h"
 
 int findIntegers(int num) {
-    int count;  // variable for counting ints
+    int count = 0;  // variable for counting ints
     // The simplest solution appears to be testing every int from 0 to n looking for consecutive 1s
     // in the binary equivalent. I believe there is a more elegant solution finding factors of the
     // numbers in base 2.
@@ -17,6 +18,7 @@ int findIntegers(int num) {
     for (int i = 0; i <= num; i++){
         n = i;
         validDigit = 1; // assume it's a valid digit until we prove otherwise
+        oneSeen = false;
         while (n != 0){
             r = (n % 2);
             if (r && oneSeen){
@@ -24,9 +26,23 @@ int findIntegers(int num) {
                 break;
             }
             oneSeen = (n % 2);  // if the remainder is 1, we found a one
+            n /= 2;
         }
         count += validDigit;
     }
 
     return count;
+}
+
+void showIntegers(int num){
+    int n;
+    std::cout << "0";
+    for (int i = 0; i <= num; i++){
+        n = i;
+        while (n != 0){
+            std::cout << (n % 2);
+            n /= 2;
+        }
+        std::cout << "\n";
+    }
 }
