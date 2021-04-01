@@ -23,6 +23,12 @@ A collection of coding challenges in various forms including some mathematical c
 > You can return the answer in any order.
 > 
 > ### Solution:
+> Used an iterative method to solve the problem. There is likely a faster way, but this solution is simple and effective.
 > 
 > ### To-Do:
-> Create unit tests.
+> Create unit tests. Try to find a faster solution.
+
+> ## Non Negative Integer without Consecutive Ones
+> Given a positive integer n, find the number of non-negative integers less than or equal to n, whose binary representations do NOT contain consecutive ones.
+>
+> ### Solution:
