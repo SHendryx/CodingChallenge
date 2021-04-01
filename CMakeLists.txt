@@ -47,7 +47,7 @@ add_executable(CodingChallenge
         C++/Reverse_Int/ReverseInt.h
         C++/Roman_To_Int/RomanToInt.cpp
         C++/Roman_To_Int/RomanToInt.h
-        C++/main.cpp)
+        C++/main.cpp C++/Two_Sum/TwoSum.cpp C++/Two_Sum/TwoSum.h)
 target_link_libraries(CodingChallenge
         gtest_main)
 #add_test()
