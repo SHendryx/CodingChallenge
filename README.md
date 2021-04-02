@@ -44,8 +44,8 @@ A collection of coding challenges in various forms including some mathematical c
 > Unit testing would be good practice, but we're using a built-in method. It really isn't needed.
 
 > ## Running-Sum:
-> Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]). 
-> Return the running sum of nums. (Should return an array)
+> Given an array nums (vector). We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]). 
+> Return the running sum of nums. (Should accept and return a vector)
 > 
 > ### Solution:
 > 
