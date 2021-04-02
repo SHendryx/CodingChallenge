@@ -4,6 +4,7 @@
 #include "Roman_To_Int/RomanToInt.h"
 #include "Two_Sum/TwoSum.h"
 #include "Non_Neg_Int_Ones/NonNegIntOnes.h"
+#include "Int_To_Binary/IntToBinary.h"
 
 int main() {
     std::cout << "Max Int: " << INT32_MAX << "\n";
@@ -18,7 +19,8 @@ int main() {
     std::cout << "Sum Pair: " << sumPair[0] << ", " << sumPair[1] << "\n";
 
     // showIntegers(10); // used to verify findIntegers is working.
-    std::cout << "Number of digits without consecutive ones: " << findIntegers(1000000000
-    ) << "\n";
+    std::cout << "Number of digits without consecutive ones: " << findIntegers(10) << "\n";
+
+    std::cout << intToBinary(1000000000);
     return 0;
 }
