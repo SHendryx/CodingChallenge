@@ -48,6 +48,8 @@ A collection of coding challenges in various forms including some mathematical c
 > Return the running sum of nums. (Should accept and return a vector)
 > 
 > ### Solution:
+> Tested and working.
 > 
 > ### To-Do:
+> Build unit tests.
 > 
