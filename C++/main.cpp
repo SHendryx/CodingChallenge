@@ -17,7 +17,8 @@ int main() {
     std::vector<int> sumPair = twoSum(myList, 9);
     std::cout << "Sum Pair: " << sumPair[0] << ", " << sumPair[1] << "\n";
 
-    showIntegers(6);
-    std::cout << "Number of digits without consecutive ones: " << findIntegers(6) << "\n";
+    // showIntegers(10); // used to verify findIntegers is working.
+    std::cout << "Number of digits without consecutive ones: " << findIntegers(1000000000
+    ) << "\n";
     return 0;
 }
