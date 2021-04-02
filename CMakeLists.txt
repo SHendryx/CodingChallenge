@@ -50,7 +50,7 @@ add_executable(CodingChallenge
         C++/main.cpp C++/Two_Sum/TwoSum.cpp
         C++/Two_Sum/TwoSum.h
         C++/Non_Neg_Int_Ones/NonNegIntOnes.cpp
-        C++/Non_Neg_Int_Ones/NonNegIntOnes.h)
+        C++/Non_Neg_Int_Ones/NonNegIntOnes.h C++/Int_To_Binary/IntToBinary.cpp C++/Int_To_Binary/IntToBinary.h)
 target_link_libraries(CodingChallenge
         gtest_main)
 #add_test()
