@@ -29,6 +29,25 @@ TEST(ReverseInt, decimal)
     EXPECT_EQ(0, reverseInt(-1563847412));
 }
 
+TEST(RomanToInt, RomanToInt){
+    EXPECT_EQ(1, romanToInt("I"));
+    EXPECT_EQ(2, romanToInt("II"));
+
+    EXPECT_EQ(4, romanToInt("IV"));
+    EXPECT_EQ(5, romanToInt("V"));
+    EXPECT_EQ(6, romanToInt("VI"));
+
+    EXPECT_EQ(9, romanToInt("IX"));
+    EXPECT_EQ(10, romanToInt("X"));
+    EXPECT_EQ(11, romanToInt("XI"));
+
+    EXPECT_EQ(14, romanToInt("XIV"));
+    EXPECT_EQ(15, romanToInt("XV"));
+    EXPECT_EQ(16, romanToInt("XVI"));
+
+    EXPECT_EQ(19, romanToInt("XIX"));
+}
+
 int main(int argc, char* argv[]) {
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
