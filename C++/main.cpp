@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <gtest/gtest.h>
 #include "Reverse_Int/ReverseInt.h"
 #include "Roman_To_Int/RomanToInt.h"
 #include "Two_Sum/TwoSum.h"
@@ -7,7 +8,11 @@
 #include "Int_To_Binary/IntToBinary.h"
 #include "Running_Sum/RunningSum.h"
 
-int main() {
+
+int main(int argc, char* argv[]) {
+    testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
+
     std::cout << "Max Int: " << INT32_MAX << "\n";
     std::cout << "Min Int: " << INT32_MIN << "\n";
     std::cout << reverseInt(123) << "\n";
