@@ -27,8 +27,8 @@ int romanToInt(std::string s){
         if (pos == s.length() - 1){
             value += getRomanValue(s[pos]);
         } else
-            //If next character is of lesser value, add current character value.
-        if (getRomanValue(s[pos + 1]) < getRomanValue(s[pos])){
+            //If next character is of lesser or equal value, add current character value.
+        if (getRomanValue(s[pos + 1]) <= getRomanValue(s[pos])){
             value += getRomanValue(s[pos]);
         } else
             //In any other case, subtract current character value.
