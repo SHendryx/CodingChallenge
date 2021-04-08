@@ -8,6 +8,26 @@
 #include "Int_To_Binary/IntToBinary.h"
 #include "Running_Sum/RunningSum.h"
 
+TEST(ReverseInt, decimal)
+{
+    EXPECT_EQ(0, reverseInt(0));
+    EXPECT_EQ(1, reverseInt(1));
+    EXPECT_EQ(-1, reverseInt(-1));
+
+    EXPECT_EQ(21, reverseInt(12));
+    EXPECT_EQ(-32, reverseInt(-23));
+
+    EXPECT_EQ(0, reverseInt(INT32_MIN));
+    EXPECT_EQ(0, reverseInt(INT32_MAX));
+
+    EXPECT_EQ(2147483641, reverseInt(1463847412));
+    EXPECT_EQ(0, reverseInt(1463847413));
+    EXPECT_EQ(0, reverseInt(1563847412));
+
+    EXPECT_EQ(-2147483641, reverseInt(-1463847412));
+    EXPECT_EQ(0, reverseInt(-1463847413));
+    EXPECT_EQ(0, reverseInt(-1563847412));
+}
 
 int main(int argc, char* argv[]) {
     testing::InitGoogleTest(&argc, argv);
