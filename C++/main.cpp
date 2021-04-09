@@ -46,6 +46,19 @@ TEST(RomanToInt, RomanToInt){
     EXPECT_EQ(16, romanToInt("XVI"));
 
     EXPECT_EQ(19, romanToInt("XIX"));
+    EXPECT_EQ(20, romanToInt("XX"));
+    EXPECT_EQ(21, romanToInt("XXI"));
+
+    EXPECT_EQ(40, romanToInt("XL"));
+    EXPECT_EQ(45, romanToInt("VL"));
+    EXPECT_EQ(49, romanToInt("IL"));
+
+    EXPECT_EQ(90, romanToInt("XC"));
+    EXPECT_EQ(95, romanToInt("VC"));
+    EXPECT_EQ(96, romanToInt("VCI"));
+    EXPECT_EQ(99, romanToInt("IC"));
+    EXPECT_EQ(104, romanToInt("CIV"));
+
 }
 
 int main(int argc, char* argv[]) {
