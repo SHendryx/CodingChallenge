@@ -12,7 +12,7 @@ A collection of coding challenges in various forms including some mathematical c
 > ## RomanToInt
 > Given a roman numeral, convert it to an integer.
 > ```
-> Symbol:     I     V     X     L     X     D     M
+> Symbol:     I     V     X     L     C     D     M
 > Value:      1     5    10    50   100   500  1000
 > ```
 > ### Solution:
