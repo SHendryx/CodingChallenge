@@ -22,18 +22,18 @@ int romanToInt(std::string s){
     int pos;
     //While not at end of string
     for (pos = 0; pos < s.length(); pos++){
-        //std::cout << "Current Value: " << value << "\n";
         //If this is the last character in the string, just add it's value.
         if (pos == s.length() - 1){
+            // We are testing for this specifically so we don't go out of bounds of the string.
             value += getRomanValue(s[pos]);
-        } else
-            //If next character is of lesser or equal value, add current character value.
-        if (getRomanValue(s[pos + 1]) <= getRomanValue(s[pos])){
-            value += getRomanValue(s[pos]);
-        } else
-            //In any other case, subtract current character value.
-        if (s[pos + 1] > s[pos]){
+        }
+        // If the next character is greater than the current character, subtract the value of the current character.
+        else if (getRomanValue(s[pos + 1]) > getRomanValue(s[pos])){
             value -= getRomanValue(s[pos]);
+        }
+        // If the next character is less than or equal to the current character, add the value of the current character.
+        else if (getRomanValue(s[pos + 1]) <= getRomanValue(s[pos])){
+            value += getRomanValue(s[pos]);
         }
     }
     return value;
