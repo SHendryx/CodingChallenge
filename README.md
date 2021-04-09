@@ -16,9 +16,15 @@ A collection of coding challenges in various forms including some mathematical c
 > ```
 > ### Solution:
 > Correctly creates an integer from a roman numeral.
+> There were several bugs preventing this from working properly. 
+> One was it not adding roman numerals which were repeated like `III`.
+> Another was not properly evaluating subtraction notation. 
+> These have been fixed.
 > 
 > ### To-Do:
-> Create unit tests to verify functionality.
+> - ~~Create unit tests to verify functionality.~~
+> - Complete unit test to check all combinations of roman numerals. Specifically need to test subtraction notation and combinations of addition and subtraction notation.
+> - It would be nice to return a value indicating the roman numeral was invalid.
 
 > ## Two-Sum
 > Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. 
