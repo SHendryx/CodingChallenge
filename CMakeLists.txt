@@ -3,8 +3,13 @@ project(CodingChallenge)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(C++/Reverse_Int)
-include_directories(C++/Roman_To_Int)
+include_directories(C++/Reverse_Int
+        C++/Roman_To_Int
+        C++/Two_Sum
+        C++/Running_Sum
+        C++/Int_To_Binary
+        C++/Non_Neg_Int_Ones
+        C++/Corp_Flight_Bookings)
 
 # Download and unpack googletest at configure time
 configure_file(CMakeLists.txt.in googletest-download/CMakeLists.txt)
@@ -43,18 +48,21 @@ endif()
 #target_link_libraries(example gtest_main)
 #add_test(NAME example_test COMMAND example)
 add_executable(CodingChallenge
+        C++/main.cpp
         C++/Reverse_Int/ReverseInt.cpp
         C++/Reverse_Int/ReverseInt.h
         C++/Roman_To_Int/RomanToInt.cpp
         C++/Roman_To_Int/RomanToInt.h
-        C++/main.cpp C++/Two_Sum/TwoSum.cpp
+        C++/Two_Sum/TwoSum.cpp
         C++/Two_Sum/TwoSum.h
         C++/Non_Neg_Int_Ones/NonNegIntOnes.cpp
         C++/Non_Neg_Int_Ones/NonNegIntOnes.h
         C++/Int_To_Binary/IntToBinary.cpp
         C++/Int_To_Binary/IntToBinary.h
         C++/Running_Sum/RunningSum.cpp
-        C++/Running_Sum/RunningSum.h)
+        C++/Running_Sum/RunningSum.h
+        C++/Corp_Flight_Bookings/CorpFlightBookings.cpp
+        C++/Corp_Flight_Bookings/CorpFlightBookings.h)
 target_link_libraries(CodingChallenge
         gtest_main)
 #add_test()
