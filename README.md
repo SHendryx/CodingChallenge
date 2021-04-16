@@ -6,12 +6,13 @@ A collection of coding challenges in various forms including some mathematical c
 > ### Solution:
 > Passed leetcode tests, but not 100% sure the solution will actually allow an integer to equal the INT32_MAX or INT32_MIN values.
 > ### To-Do:
-> - Design some unit tests to thoroughly examine if the code is functioning as intended.
+> - ~~Design some unit tests to thoroughly examine if the code is functioning as intended.~~
+> - Unit tests are complete.
 
 > ## RomanToInt
 > Given a roman numeral, convert it to an integer.
 > ```
-> Symbol:     I     V     X     L     X     D     M
+> Symbol:     I     V     X     L     C     D     M
 > Value:      1     5    10    50   100   500  1000
 > ```
 > ### Solution:
