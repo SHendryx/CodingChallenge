@@ -7,6 +7,7 @@
 #include "Non_Neg_Int_Ones/NonNegIntOnes.h"
 #include "Int_To_Binary/IntToBinary.h"
 #include "Running_Sum/RunningSum.h"
+#include "Corp_Flight_Bookings/CorpFlightBookings.h"
 
 TEST(ReverseInt, decimal)
 {
@@ -73,8 +74,22 @@ TEST(RomanToInt, RomanToInt){
 
 }
 
+TEST(CorpFlightBookings, CorpFlightBookings){
+    std::vector<std::vector<int>> myFlights = {{1,2,10},{2,3,20},{2,5,25}};
+    std::vector<int> myResult = corpFlightBookings(myFlights, 5);
+    std::vector<int> expectedResult = {10,55,45,25,25};
+
+    ASSERT_EQ(expectedResult.size(), myResult.size()) << "Vectors x and y are of unequal length";
+
+    for (int i = 0; i < expectedResult.size(); ++i) {
+        EXPECT_EQ(expectedResult[i], myResult[i]) << "Vectors x and y differ at index " << i;
+    }
+}
+
 int main(int argc, char* argv[]) {
+
     testing::InitGoogleTest(&argc, argv);
+
     return RUN_ALL_TESTS();
 
     std::cout << "Max Int: " << INT32_MAX << "\n";
