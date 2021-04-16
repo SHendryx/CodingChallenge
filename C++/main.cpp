@@ -59,6 +59,18 @@ TEST(RomanToInt, RomanToInt){
     EXPECT_EQ(99, romanToInt("IC"));
     EXPECT_EQ(104, romanToInt("CIV"));
 
+    EXPECT_EQ(400, romanToInt("CD"));
+    EXPECT_EQ(401, romanToInt("CDI"));
+    EXPECT_EQ(404, romanToInt("CDIV"));
+    EXPECT_EQ(406, romanToInt("CDVI"));
+    EXPECT_EQ(409, romanToInt("CDIX"));
+    EXPECT_EQ(411, romanToInt("CDXI"));
+    EXPECT_EQ(414, romanToInt("CDXIV"));
+    EXPECT_EQ(440, romanToInt("CDXL"));
+    EXPECT_EQ(445, romanToInt("CDVL"));
+    EXPECT_EQ(446, romanToInt("CDVLI"));
+    EXPECT_EQ(450, romanToInt("LD"));
+
 }
 
 int main(int argc, char* argv[]) {
