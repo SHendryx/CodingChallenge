@@ -54,7 +54,7 @@ add_executable(CodingChallenge
         C++/Int_To_Binary/IntToBinary.cpp
         C++/Int_To_Binary/IntToBinary.h
         C++/Running_Sum/RunningSum.cpp
-        C++/Running_Sum/RunningSum.h)
+        C++/Running_Sum/RunningSum.h C++/Corp_Flight_Bookings/CorpFlightBookings.cpp C++/Corp_Flight_Bookings/CorpFlightBookings.h)
 target_link_libraries(CodingChallenge
         gtest_main)
 #add_test()
