@@ -88,6 +88,19 @@ TEST(CorpFlightBookings, CorpFlightBookings){
 
 int main(int argc, char* argv[]) {
 
+    for (int x=1; x <= 100; x++){
+        if (x % 3 == 0){
+            std::cout << "Fizz ";
+        }
+        if (x % 5 == 0){
+            std::cout << "Buzz";
+        }
+        if (x % 3 != 0 && x % 5 != 00){
+            std::cout << x;
+        }
+        std::cout << "\n";
+    }
+
     testing::InitGoogleTest(&argc, argv);
 
     return RUN_ALL_TESTS();
@@ -112,6 +125,7 @@ int main(int argc, char* argv[]) {
     for (int x : myList)
         std::cout << x << ", ";
     std::cout << "\n";
+
 
     return 0;
 }
